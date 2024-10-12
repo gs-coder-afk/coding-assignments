@@ -8,7 +8,12 @@ body {
     color: whitesmoke; 
      
 }
-
+/* --- notes 
+added a background to the titles of the pages , with a border .
+using different font sizes & margins i centered the title box .
+same with my h3 or subject line . h4 i only stylized the color & 
+text size .
+---*/
 /* --- ELEMENTS --- */
 
 h1 {
@@ -37,6 +42,10 @@ color:rgba(252, 252, 0, 0.705);
 font-size: 18px;
  }
 
+ /* --- notes 
+colored the navbar & centered it . also added a hover effect 
+& action when the links are used .
+ ---*/
  /* --- NAV --- */
 
  .navbar {
@@ -75,7 +84,10 @@ text-align: center;
     background-color: rgba(252, 252, 0, 0.705); 
     border-radius: 2px;
  } 
-
+/* --- notes 
+adjusted the layout using flex to allow the images to have 
+even spacing & go across the screen  vs down it . centered text .
+--- */
  /* --- IMAGE LIST INDEX --- */ 
 
  #favoritebands {
@@ -90,7 +102,11 @@ text-align: center;
     list-style-type:none;
 
  } 
-
+/* --- notes
+h1 , h3 , & navbar were already updated from home page .
+centered text in table & added border . centered table to match 
+the rest of the page .
+--- */
  /* --- TABLE --- */ 
 
  table{
@@ -113,7 +129,12 @@ tr {
     text-align: center;
     text-indent: 10px;
 }
-
+/* --- notes
+h1 , h3 , & navbar were already updated from home page .
+changed colors , paddings / margins , & centered the form 
+inputs . stylized the button . centered form & button to 
+match h1 . S
+--- */
 /* --- FORM --- */
 
 form {
