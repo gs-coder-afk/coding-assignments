@@ -1,0 +1,152 @@
+/* --- notes 
+change the color , background color , & font of the overall body. 
+--- */
+
+body {
+    background-color: rgb(56, 56, 56);
+    font-family:'Courier New', Courier, monospace;
+    color: whitesmoke; 
+     
+}
+
+/* --- ELEMENTS --- */
+
+h1 {
+    background-color: rgba(0, 0, 0, 0.877);
+    width: max-content;
+    padding: 8px; 
+    border-style:double;
+    border-radius: 6px; 
+    font-size: 35px; 
+    margin-inline-start: auto;
+    margin-inline-end: auto; 
+} 
+ h3 {
+    background-color:rgba(1, 129, 112, 0.877); 
+    width: max-content; 
+    padding: 4px; 
+    color: black; 
+    border-radius: 2px; 
+    font-size: 20px; 
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+ } 
+
+ h4 {
+color:rgba(252, 252, 0, 0.705); 
+font-size: 18px;
+ }
+
+ /* --- NAV --- */
+
+ .navbar {
+    background-color:rgba(1, 129, 112, 0.877);
+    width: max-content;
+    color:whitesmoke; 
+    padding: 4px;
+    border-radius: 4px;  
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    text-align:center;
+    
+ } 
+
+ .navbar ul { 
+display: flex; 
+list-style-type:none; 
+flex-wrap:nowrap;
+justify-content: flex-start;
+text-align: center;
+
+ }
+
+ .navbar a {
+    color: whitesmoke; 
+    margin: 10px;
+    text-align: center; 
+    
+ } 
+
+ .navbar a:hover {
+    color:black;
+ } 
+
+ .navbar a:active {
+    background-color: rgba(252, 252, 0, 0.705); 
+    border-radius: 2px;
+ } 
+
+ /* --- IMAGE LIST INDEX --- */ 
+
+ #favoritebands {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+
+ } 
+
+ #favoritebands li {
+    text-align: center; 
+    list-style-type:none;
+
+ } 
+
+ /* --- TABLE --- */ 
+
+ table{
+    background-color: black;
+    border-style: dashed;
+    text-align: center; 
+    padding: 10px; 
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+}
+
+th {
+    color:rgba(252, 252, 0, 0.705); 
+    text-decoration:underline; 
+    padding:8px; 
+    font-size: 20px; 
+} 
+
+tr {
+    text-align: center;
+    text-indent: 10px;
+}
+
+/* --- FORM --- */
+
+form {
+    color:whitesmoke;
+    display: flex;
+    flex-direction: column; 
+    max-width: 28%;
+    padding: 4px; 
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+} 
+
+form label {
+    padding: 2px;
+    font-weight: 550;
+} 
+
+form input {
+    color: whitesmoke;
+    font-weight: 500;
+    padding: 1.5px;
+    margin: 2.5px;
+    text-indent: 2px; 
+    background-color:rgb(0, 0, 0);
+    border-radius: 2px;
+}
+
+form button {
+    background-color:rgba(252, 252, 0, 0.705); 
+     margin: 10px;
+     border-style:double;
+     border-color:whitesmoke;
+     border-radius: 2.5px; 
+     font-weight: 575;
+     font-size: 13px;
+}
