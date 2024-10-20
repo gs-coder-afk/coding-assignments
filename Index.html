@@ -1,80 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>HTML Soultion - Home</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
+    <title>Week 3 Bootstrap Project</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Create a website using only HTML. 
-    The website can be anything you like (within school guidelines) 
-    if it meets the following criteria:
-
-    1. Create a homepage named index.html
-    At least 3 pages with links to navigate between all pages present 
-    on each page.
-    2. 2 different size headers
-    3. a list
-    4. 3 images
-    5. a table 
-    6. a form. -->
 
 
-    <!-- here is the navigation of my html site . things are in a bullet point list ul, 
-     everything in quoatations is where the user is directed once they click a link .
-    the names if each link are in white font between the angle brackets . 
-    -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="./Index.html">Home</a></li>
-            <li><a href="./Table.html">Table</a></li>
-            <li><a href="./Form.html">Form</a></li>
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Index.html">PokeNav</a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="SecondPage.html">Regions</a>
+          </li>
         </ul>
-    </nav>
+        
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      
+        </div>
+    </div>
 
-<!-- main header i used for a greeting to the site . 
- followed by the subject matter , i chose my favorite bands . 
- i made another bullet point list . each band name in a smaller header size . 
- followed by an image , each image i chose to showcase the band members . 
- i altered a few of the image sizes to be more uniform & gave them brief descriptions .
- alt is giving the description when an image fails to load & height with px after the 
- numerical value is how i changed the size of each image . 
--->
-    <h1>Welcome to my first website</h1>
+  </nav>
 
-<h3>My favorite bands</h3>
-<ul id="favoritebands">
-    <li>
-<h4>Korn<h4>
-    <img 
-    alt="Band members"
-    height="183px"
-    src="./Images/KornBandpicture.jpg">
-</img>
-    </li>
-    <li>
-<h4>The Devil Wears Prada</h4>
-<img 
-alt="Band members"
-height="182px"
-src="./Images/TDWPpicture.jpg">
-</img>
-    </li>
-    <li>
-<h4>Attack Attack!</h4>
-<img 
-alt="Band members"
-src="./Images/AttackAttackpicture.jpg">
-</img>
-    </li>
-</ul>
+  
+ <h1 class="text-center p-2">My favorite starters from each region</h1> 
 
-<!-- ul is unordered list , which is the bullet points the user sees . 
- li is the list element which in my example is the name of the band . 
--->
+<!-- GRID -->
 
+ <div class="container text-center">
+
+    <div class="row row-cols-1 row-cols-lg-5 g-4 m-3">
+
+      <div class="col-sm">
+        <div class="card h-100 shadow-lg">
+            <img src="imagesweek3/squirtle.jpg" class="card-img-top" alt="Pokemon Squirtle">
+            <div class="card-body">
+              <h3 class="card-title">Squirtle</h3>
+              <p class="card-text">Kanto's water starter.</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-sm">
+        <div class="card h-100 shadow-lg">
+            <img src="imagesweek3/Cyndaquil.jpg" class="card-img-top" alt="Pokemon Cyndaquil">
+            <div class="card-body">
+              <h3 class="card-title">Cyndaquil</h3>
+              <p class="card-text">Johto's fire starter.</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-sm">
+        <div class="card h-100 shadow-lg">
+            <img src="imagesweek3/Mudkip.jpg" class="card-img-top" alt="Pokemon Mudkip">
+            <div class="card-body">
+              <h3 class="card-title">Mudkip</h3>
+              <p class="card-text">Hoenn's water starter.</p>
+            </div>
+          </div>
+      </div>
+      
+      <div class="col-sm">
+        <div class="card h-100 shadow-lg">
+            <img src="imagesweek3/Chimchar.jpg" class="card-img-top" alt="Pokemon Chimchar">
+            <div class="card-body">
+              <h3 class="card-title">Chimchar</h3>
+              <p class="card-text">Sinnoh's fire starter.</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-sm">
+        <div class="card h-100 shadow-lg">
+            <img src="imagesweek3/Oshawott.jpg" class="card-img-top" alt="Pokemon Oshawott">
+            <div class="card-body">
+              <h3 class="card-title">Oshawott</h3>
+              <p class="card-text">Unova's water starter.</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-sm">
+        <div class="card h-100 shadow-lg">
+            <img src="imagesweek3/Chespin.jpg" class="card-img-top" alt="Pokemon Kalos">
+            <div class="card-body">
+              <h3 class="card-title">Chespin</h3>
+              <p class="card-text">Kalos' grass starter.</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-sm">
+        <div class="card h-100 shadow-lg">
+            <img src="imagesweek3/Rowlet.jpg" class="card-img-top" alt="Pokemon Rowlet">
+            <div class="card-body">
+              <h3 class="card-title">Rowlet</h3>
+              <p class="card-text">Alola's grass starter.</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-sm">
+        <div class="card h-100 shadow-lg">
+            <img src="imagesweek3/Grookey.png" class="card-img-top" alt="Pokemon Grookey">
+            <div class="card-body">
+              <h3 class="card-title">Grookey</h3>
+              <p class="card-text">Galar's grass starter.</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-sm">
+        <div class="card h-100 shadow-lg">
+            <img src="imagesweek3/Sprigatito.jpg" class="card-img-top" alt="Pokemon Sprigatito">
+            <div class="card-body">
+              <h3 class="card-title">Sprigatito</h3>
+              <p class="card-text">Paldea's grass starter.</p>
+            </div>
+          </div>
+      </div>
+
+    </div>
+  </div>
+
+<script scr="node_modules/bootstrap/distr/js/bootstrap.bundle.js"></script>
+<footer class="p-5">
+    <div class="text-center">
+    <h6>gs-coder-afk copyright 2024</h6>
+</div>
+</footer>
 
 </body>
 </html>
